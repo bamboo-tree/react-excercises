@@ -1,5 +1,5 @@
 import "./App.css";
-import { Text, Button } from "./ui";
+import { Text, Button, Paragraph } from "./ui";
 
 function App() {
 	const handleClick = () => {
@@ -9,6 +9,7 @@ function App() {
 		<>
 			<Text>My epic text component</Text>
 			<Button onClick={handleClick} label="Click me" />
+			<Paragraph>Paragraph italic</Paragraph>
 		</>
 	);
 }

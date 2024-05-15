@@ -3,8 +3,10 @@ import { cn } from "../../utils/cn";
 
 type Props = {
 	children: string;
-} & ComponentProps<"p">;
+} & ComponentProps<"h1">;
 
 export const Text = ({ children, className }: Props) => {
-	return <p className={cn("text-blue-300 font-600", className)}>{children}</p>;
+	return (
+		<h1 className={cn("text-blue-300 font-600", className)}>{children}</h1>
+	);
 };
